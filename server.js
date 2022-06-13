@@ -2,13 +2,13 @@ const express = require("express");
 const app = express();
 const fs = require('fs');
 const cors = require('cors');
-const port = 3077;
+const port = 3082;
 
 app.use(cors());
 
 // Home route
 app.get("/", (req, res) => {
-    res.send("404");
+    res.send("harmony one!");
 });
 
 // Mock API
@@ -19,5 +19,5 @@ app.get("/harmony.json", (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Visit http://localhost:3077`);
+    console.log(`Visit http://localhost:3082`);
 });
